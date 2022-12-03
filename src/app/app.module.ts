@@ -18,8 +18,7 @@ import{ HttpClientModule } from '@angular/common/http'
     ExperienciaComponent,
     EducacionComponent
   ],
-  exports: [AppComponent]
-  imports [
+  imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
