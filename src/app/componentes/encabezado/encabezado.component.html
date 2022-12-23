@@ -3,8 +3,25 @@
       <div class="row">
         <div class="col">
             <img src="assets/img/arg-programa.png" style="height: 5em; width: auto;" alt="logo">
-        </div>      
-          
+        
+        
+        
+          </div>      
+
+          <form action="" class="login">
+            <div class="form-group">
+              <label>Nombre</label><br>
+              <input class="form-control" type="text" name="name" placeholder="escribe tu nombre">
+            </div>
+
+            <div class="form-group">
+              <label>Clave</label><br>
+              <input class="form-control" type="text" name="password" placeholder="escribe tu clave">
+
+            </div>
+            
+          </form>
+        
           <a href="https://www.instagram.com/sandra_kofler_escanuela/" target="_blank">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="50px" height="50px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
@@ -17,18 +34,54 @@
             s6.336-2.842,6.336-6.335c0-0.842-0.17-1.645-0.467-2.379h3.459V22.107z"/>
             </svg>
           </a>
-           
+
         <div class="card text-bg-dark">
           <img src="assets/img/PORTADA SANDRA.png" class="card-img">
           </div>
-  
-            <div class="container text-black">
+
+          <h1> Sandra Kofler</h1>
+    
+        
+          <script>
+            function cambiar_parrafo(){;
+            document.getElementById("edit-acercade").style.display="block";
+            let texto = document.getElementById("text-acercade").innerText;
+            console.log(texto);
+             };
+
+            function myfunction2(valor){
+            document.getElementById("text-acercade").innerText=valor;
+             }
+          </script>  
+
+          
+          <div class="container text-black">
+
                  
               <hr class="my-4">
-              Santiago del Estero, Argentina <div class="titulo"> Información de contacto 
+
+
+              <p id="text-acercade">
+              <h6>Periodismo y Comunicación Social</h6>
+              <h6>Santiago del Estero (Argentina)</h6> 
+              
+              <div class="titulo"> Información de contacto
+                
             
             </div>
-            <!-- /.container -->
+
+            
+            <div class="btn-edit" onclick="cambiar_parrafo()" >
+              <a href="#" class="btn.right">
+                <i class="bi bi-pencil"></i></a> 
+               
+                <div class="btn-edit" onclick="delete_parrafo()"> 
+                <a href="#" class="btn-right">
+                <i class="bi bi-x"></i></a>
+          </div>
+
+          <div> 
+            <input id="edit-acercade" type="text" oninput="myfunction2(this.value)" style="display:none">
           </div>
           <!-- /.jumbotron -->
         
